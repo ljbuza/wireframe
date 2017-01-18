@@ -13,6 +13,9 @@ html {
   height: 100%;
   background-color: #2B3856;
 }
+.container {
+  padding: 0 60px;
+}
 .nav .open > a {
   background-color: transparent;
 }
@@ -22,11 +25,44 @@ html {
 .nav .open > a:focus {
   background-color: transparent;
 }
-/*.nav li .active {
-  background: yellow;
-  background-color: yellow;
+.nav-tabs>li>a {
+  background-color: #428BCA;
+  color: white;
 }
-.nav-link {
+.nav-tabs>li>a:hover {
+  background-color: #5BC0DE;
+}
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+  /*color: green;*/
+  background: white;
+  color: white;
+  background-color: #2B3856;
+}
+.pagination-sm>li>a, .pagination-sm>li>span {
+    font-size: 12px;
+    line-height: 1.5;
+}
+.pagination li.active>a, .pagination li.active>span {
+    color: #fff; 
+    background-color: #337ab7;
+    border-color: #337ab7;
+}
+.pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover {
+    z-index: 3;
+    color: #fff;
+    cursor: default;
+    background-color: #337ab7;
+    border-color: #337ab7;
+}
+.panel-body {
+  font-size: 15px;
+}
+.panel-body>table {
+  font-size: 13px;
+}
+/*.nav-link {
+  background-color: #428BCA;
+  background-color: #5bc0de;
   background: yellow;
   background-color: yellow;
   color: purple;

@@ -25,7 +25,7 @@
             <form>
             <ul class="nav sidebar-nav">
                 <li>
-                    <a href="#"><i class="fa fa-fw fa-home"></i> Home</a>
+                    <a href="index.html"><i class="fa fa-fw fa-home"></i> Home</a>
                 </li>
                 <li>
                     <a href="#"><i class="fa fa-fw fa-folder"></i> Section 1</a>
@@ -171,11 +171,11 @@
 
                 <div class="row">
                     <ul class="nav nav-tabs">
-                        <li class="active">
-                            <a class="nav-link active" href="index.html">Subscriber</a>
-                        </li>
                         <li>
-                            <a class="nav-link" href="order.html">Order</a>
+                            <a class="nav-link" href="index.html">Subscriber</a>
+                        </li>
+                        <li class="active">
+                            <a class="nav-link active" href="order.html">Order</a>
                         </li>
                         <li>
                             <a class="nav-link" href="equipment.html">Equipment</a>
@@ -187,151 +187,53 @@
                 </div>
                 <br/>
                 <div class="content row">
-                    <div class="col-md-6">
-                        <div class="panel panel-primary">
-                            <div class="panel-heading">Subscriber</div>
-                            <div class="panel-body">
-                                <dl class="dl-horizontal">
-                                    <dt>Subscriber Name</dt>
-                                    <dd>Noal Miles</dd>
-                                    <dt>BxE Subscriber ID</dt>
-                                    <dd>2222-3333-4444</dd>
-                                    <dt>BSS Subscriber ID</dt>
-                                    <dd>8224-1001-5555-9999</dd>
-                                </dl>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="panel panel-primary">
-                            <div class="panel-heading">Location
-                                <div class="pull-right"><button class="btn btn-info btn-sm">Refresh</button></div>
-                            </div>
-                            <div class="panel-body">
-                                <dl class="dl-horizontal">
-                                    <dt>Service Address</dt>
-                                    <dd>123 Trumpeleau<br/>Madison, WI 53562</dd>
-                                    <dt>BxE Location ID</dt>
-                                    <dd>9999-8888-7777</dd>
-                                    <dt>BSS Location ID</dt>
-                                    <dd>78029838</dd>
-                                </dl>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="panel panel-primary">
-                            <div class="panel-heading">Services</div>
-                            <div class="panel-body">
-                                <dl class="dl-horizontal">
-                                    <dt>BxE Service Name</dt>
-                                    <dd>DOCSIS</dd>
-                                    <dt>BSS Product Name</dt>
-                                    <dd>TDS Gold</dd>
-                                    <dt>Download Speed</dt>
-                                    <dd>100 Mbps</dd>
-                                    <dt>Upload Speed</dt>
-                                    <dd>10 Mbps</dd>
-                                    <dt>Prov Type</dt>
-                                    <dd>100x10</dd>
-                                </dl>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="panel panel-primary">
-                            <div class="panel-heading">Network</div>
-                            <div class="panel-body">
-                                <dl class="dl-horizontal">
-                                    <dt>CMTS</dt>
-                                    <dd><a href="#">ALPITXENcmt31</a></dd>
-                                    <dt>Fiber Node</dt>
-                                    <dd><a href="#">1</a></dd>
-                                    <dt>BSS Location ID</dt>
-                                    <dd>78029838</dd>
-                                </dl>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-md-12">
                         <div class="panel panel-primary">
                             <div class="panel-heading">Orders</div>
                             <div class="panel-body">
-                                <div class="list-group">
-                                    <a href="#" class="list-group-item list-group-item-info">Open Orders</a>
-                                    <dl class="dl-horizontal list-group-item">
-                                        <dt>BxE Order Number</dt>
-                                        <dd><a href="#">1234</a></dd>
-                                        <dt>External Order Number</dt>
-                                        <dd>686686</dd>
-                                        <dt>Order Status</dt>
-                                        <dd>PENDING</dd>
-                                        <dt>Last Updated</dt>
-                                        <dd>June 6, 2016<br/>09:56 AM CST</dd>
-                                        <dt>Created Updated</dt>
-                                        <dd>June 1, 2016<br/>10:06 AM CST</dd>
-                                    </dl>
-                                    <a href="#" class="list-group-item list-group-item-info">Completed Orders</a>
-                                    <dl class="dl-horizontal list-group-item">
-                                        <dt>BxE Order Number</dt>
-                                        <dd><a href="#">0003</a></dd>
-                                        <dt>External Order Number</dt>
-                                        <dd>555555</dd>
-                                        <dt>Order Status</dt>
-                                        <dd>COMPLETE</dd>
-                                        <dt>Last Updated</dt>
-                                        <dd>June 6, 2016<br/>09:56 AM CST</dd>
-                                        <dt>Created Updated</dt>
-                                        <dd>June 1, 2016<br/>10:06 AM CST</dd>
-                                    </dl>
-                                </div>
+                                <table class="table table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th>BxE ID</th>
+                                            <th>BSS ID</th>
+                                            <th>Status</th>
+                                            <th>Last Name</th>
+                                            <th>First Name</th>
+                                            <th>Street</th>
+                                            <th>City</th>
+                                            <th>ST</th>
+                                            <th>Last Mod Date</th>
+                                            <th>Created Date</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody> 
+                                        <tr><td>1234</td><td>3434343434</td><td class="info">PENDING</td><td>Miles</td><td> Noal</td><td>123 Trumpeleau</td><td>Madison</td><td>WI</td><td> 2016-06-03 09:56 AM CST</td><td> 2016-06-01 05:00 PM CST</td></tr>
+                                        <tr><td>00003</td><td>4545454545</td><td class="success">COMPLETE</td><td>Wallace</td><td>Jon</td><td>111 Basswood</td><td>Verona</td><td>WI</td><td> 2016-06-03 09:56 AM CST</td><td> 2016-06-01 05:00 PM CST</td></tr>
+                                        <tr><td>00004</td><td>7898789878</td><td class="danger">ERROR</td><td>Miles</td><td> Noal</td><td>123 Trumpeleau</td><td>Madison</td><td>WI</td><td> 2016-06-03 09:56 AM CST</td><td> 2016-06-01 05:00 PM CST</td></tr>
+                                    </tbody>
+                                </table>
+                                <nav>
+                                    <ul class="pagination pagination-sm">
+                                        <li class="disabled">
+                                            <a href="#" aria-label="Previous">
+                                            <span aria-hidden="true">&laquo;</span>
+                                            </a>
+                                        </li>
+                                        <li class="active"><a href="#">1</a></li>
+                                        <li><a href="#">2</a></li>
+                                        <li><a href="#">3</a></li>
+                                        <li>
+                                            <a href="#" aria-label="Next">
+                                                <span aria-hidden="true">&raquo;</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
                             </div>
                         </div>
                     </div>
-
-                    <div class="col-md-6">
-                        <div class="panel panel-primary">
-                            <div class="panel-heading">Equipment</div>
-                            <div class="panel-body">
-                                <div class="list-group">
-                                    <dl class="dl-horizontal list-group-item">
-                                        <dt>Equip Type</dt>
-                                        <dd>Cable Modem</dd>
-                                        <dt>Make</dt>
-                                        <dd>ARRIS</dd>
-                                        <dt>Model</dt>
-                                        <dd>TG1642</dd>
-                                        <dt>CM MAC Address</dt>
-                                        <dd>FF:EE:DD:CC:BB:AA</dd>
-                                        <dt>SW Firmware Version</dt>
-                                        <dd>tds_1.0.2</dd>
-                                        <dt>Current IP Address</dt>
-                                        <dd>60.10.1.2</dd>
-                                    </dl>
-                                    <dl class="dl-horizontal list-group-item">
-                                        <dt>Equip Type</dt>
-                                        <dd>Host</dd>
-                                        <dt>Make</dt>
-                                        <dd>Apple</dd>
-                                        <dt>Model</dt>
-                                        <dd>iPad</dd>
-                                        <dt>CM MAC Address</dt>
-                                        <dd>FF:EE:DD:CC:BB:AA</dd>
-                                        <dt>SW Firmware Version</dt>
-                                        <dd>tds_1.0.2</dd>
-                                        <dt>Current IP Address</dt>
-                                        <dd>60.10.1.2</dd>
-                                    </dl>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
                 </div>
+
             </div>
         </div>
         <!-- page-content-wrapper -->
