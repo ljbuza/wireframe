@@ -1,0 +1,28 @@
+body {
+  background-color: lightsteelblue;
+  /*background-color: #F1F1F7;*/
+}
+/*0C9FD0 tds alt blue */
+/*EDEDF2*/
+.head.grid {
+  margin-top: 40px;
+  background-color: #FAFAFA;
+  padding-bottom: 20px;
+}
+/*ECECEC*/
+/*63B1C9*/
+.ui.card>.content:nth-child(1) {
+  background-color: #FAFAFA;
+}
+/*6F7E95*/
+/*F2F7FA*/
+.ui.card>.content>.header,
+.ui.cards>.card>.content>.header {
+  color: black;
+}
+td.right.aligned {
+  font-weight: bold;
+}
+.ui.very.basic.table tr td {
+  border-top: none;
+}
