@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
+  <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
+  <link rel="stylesheet" type="text/css" href="main.css">
+
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+    crossorigin="anonymous"></script>
+  <script src="semantic/dist/semantic.min.js"></script>
+  <script type="text/javascript">
+  function main() {
+    $('.ui.dropdown')
+      .dropdown()
+      ;
+  };
+  $(document).ready(main);
+</script>
+
+<title>Home Page</title>
+</head>
+
+<body>
+
+<div class="ui top fixed inverted menu">
+  <a class="item">
+    Home
+  </a>
+  <div class="ui pointing dropdown link item">
+    <span class="text">Menu</span>
+    <i class="dropdown icon"></i>
+    <div class="menu">
+      <a class="item" href="index_sm.html">Subscriber</a>
+      <a class="item" href="equipment_sm.html">Equipment</a>
+      <div class="item">Network</div>
+      <div class="divider"></div>
+      <div class="item">
+        <i class="dropdown icon"></i>
+        <span class="text">Heading 1</span>
+        <div class="menu">
+          <div class="header">Subhead 1</div>
+          <div class="item">item 2</div>
+          <div class="item">item 3</div>
+          <div class="divider"></div>
+          <div class="header">Subhead 2</div>
+          <div class="item">item 1</div>
+          <div class="item">item 2</div>
+          <div class="item">item 3</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="item">
+
+    <div class="ui icon labeled input">
+      <div class="ui dropdown label">
+        <div class="text">All</div>
+        <i class="dropdown icon"></i>
+        <div class="menu">
+          <div class="item">Name</div>
+          <div class="item">Address</div>
+          <div class="item">Order</div>
+          <div class="item">All</div>
+        </div>
+      </div>
+      <input type="text" placeholder="Search..." />
+      <i class="search icon"></i>
+    </div>
+
+  </div>
+  <div class="right item">
+    <div class="ui right pointing label">
+      Logged in as mabworthy
+    </div>
+    <a href="#">
+    <i class="power icon"></i>
+    Log Off
+    </a>
+  </div>
+</div>
+
+<div class="ui head grid">
+  <div class="head column">
+    <div class="ui container">
+      <h2 class="ui red header">
+       Alerts (click for details)
+      </h2>
+      <div class="ui relaxed divided list">
+        <div class="item">
+          <div class="content">
+            <a class="header">CMTS 2 is at 99% usage.</a>
+            <div class="description">Updated 10 mins ago</div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="content">
+            <a class="header">MAC Domain XYZ is at 74% usage.</a>
+            <div class="description">Updated 5 mins ago</div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="content">
+            <a class="header">MAC Domain ZZZ is at 80% usage.</a>
+            <div class="description">Updated 10 mins ago</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="ui grid container">
+  <div class="six wide column">
+    <div class="ui fluid card">
+      <div class="content">
+        <div class="ui header">Top Users</div>
+      </div>
+      <div class="content">
+
+        <table class="ui striped compact table">
+          <thead>
+            <tr>
+              <th>Subscriber</th>
+              <th>Usage</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Jon Smith</td>
+              <td>20gb</td>
+            </tr>
+            <tr>
+              <td>Mary George</td>
+              <td>15gb</td>
+            </tr>
+            <tr>
+              <td>Spike Souza</td>
+              <td>10gb</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div> <!-- card -->
+  </div>
+
+ <div class="ten wide column">
+    <div class="ui fluid card">
+      <div class="content">
+        <div class="ui header">Pending Orders</div>
+      </div>
+      <div class="content">
+        <table class="ui striped compact table">
+          <thead>
+            <tr>
+              <th>BxE Order Number</th>
+              <th>External Order Number</th>
+              <th>Subscriber</th>
+              <th>Created</th>
+              <th>Last Updated</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1234</td>
+              <td>696686</td>
+              <td>John Addams</td>
+              <td>Jun 1, 2016 09:57 AM CST</td>
+              <td>Jun 6, 2016 11:24 AM CST</td>
+            </tr>
+            <tr>
+               <td>3456</td>
+              <td>696686</td>
+              <td>Henry Knox</td>
+              <td>Jun 1, 2016 09:57 AM CST</td>
+              <td>Jun 6, 2016 11:24 AM CST</td>
+             </tr>
+          </tbody>
+        </table>
+      </div>
+    </div> <!-- card -->
+  </div> <!-- column -->
+
+  <div class="six wide column">
+    <div class="ui fluid card">
+      <div class="content">
+        <div class="ui header">Top CMTS Usage</div>
+      </div>
+      <div class="content">
+
+        <table class="ui striped compact table">
+          <thead>
+            <tr>
+              <th>CMTS</th>
+              <th>Usage</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>CMTS1</td>
+              <td>80%</td>
+            </tr>
+            <tr>
+              <td>CMTS2</td>
+              <td>75%</td>
+            </tr>
+            <tr>
+              <td>CTMTS3</td>
+              <td>70%</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div> <!-- card -->
+  </div>
+
+ <div class="ten wide column">
+    <div class="ui fluid card">
+      <div class="content">
+        <div class="ui header">Completed Orders</div>
+      </div>
+      <div class="content">
+        <table class="ui striped compact table">
+          <thead>
+            <tr>
+              <th>BxE Order Number</th>
+              <th>External Order Number</th>
+              <th>Subscriber</th>
+              <th>Created</th>
+              <th>Last Updated</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1234</td>
+              <td>696686</td>
+              <td>Nathaniel Hawthorne</td>
+              <td>Jun 1, 2016 09:57 AM CST</td>
+              <td>Jun 6, 2016 11:24 AM CST</td>
+            </tr>
+            <tr>
+               <td>3456</td>
+              <td>696686</td>
+              <td>Herman Melville</td>
+              <td>Jun 1, 2016 09:57 AM CST</td>
+              <td>Jun 6, 2016 11:24 AM CST</td>
+             </tr>
+          </tbody>
+        </table>
+      </div>
+    </div> <!-- card -->
+  </div> <!-- column -->
+
+  <div class="sixteen wide right aligned column">
+    <div class="ui button">
+      <i class="plus icon"></i> Add/Remove 
+    </div>
+  </div>
+
+</div> <!-- grid container -->
+</body>
+
+</html>
