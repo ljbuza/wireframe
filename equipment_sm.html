@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
+  <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
+  <link rel="stylesheet" type="text/css" href="main.css">
+
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+    crossorigin="anonymous"></script>
+  <script src="semantic/dist/semantic.min.js"></script>
+  <script type="text/javascript">
+  function main() {
+    $('.ui.dropdown')
+      .dropdown()
+      ;
+  };
+  $(document).ready(main);
+</script>
+
+<title>Equipment View</title>
+</head>
+
+<body>
+
+<div class="ui top fixed inverted menu">
+  <a class="item">
+    Home
+  </a>
+  <div class="ui pointing dropdown link item">
+    <span class="text">Menu</span>
+    <i class="dropdown icon"></i>
+    <div class="menu">
+      <a class="item" href="index_sm.html">Subscriber</a>
+      <a class="item" href="equipment_sm.html">Equipment</a>
+      <div class="item">Network</div>
+      <div class="divider"></div>
+      <div class="item">
+        <i class="dropdown icon"></i>
+        <span class="text">Heading 1</span>
+        <div class="menu">
+          <div class="header">Subhead 1</div>
+          <div class="item">item 2</div>
+          <div class="item">item 3</div>
+          <div class="divider"></div>
+          <div class="header">Subhead 2</div>
+          <div class="item">item 1</div>
+          <div class="item">item 2</div>
+          <div class="item">item 3</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="item">
+
+    <div class="ui icon labeled input">
+      <div class="ui dropdown label">
+        <div class="text">All</div>
+        <i class="dropdown icon"></i>
+        <div class="menu">
+          <div class="item">Name</div>
+          <div class="item">Address</div>
+          <div class="item">Order</div>
+          <div class="item">All</div>
+        </div>
+      </div>
+      <input type="text" placeholder="Search..." />
+      <i class="search icon"></i>
+    </div>
+
+  </div>
+  <div class="right item">
+    <div class="ui right pointing label">
+      Logged in as mabworthy
+    </div>
+    <a href="#">
+    <i class="power icon"></i>
+    Log Off
+    </a>
+  </div>
+</div>
+
+<div class="ui head grid">
+  <div class="head column">
+    <div class="ui container">
+      <h2 class="ui blue header">
+        Equipment Status 
+      </h2>
+    </div>
+  </div>
+</div>
+
+<div class="ui grid container">
+  
+  <div class="sixteen wide column">
+    <div class="ui fluid card">
+      <div class="content">
+        <div class="ui header">Cable Modem</div>
+      </div>
+      <div class="content">
+        <table class="ui striped compact table">
+            <thead>
+                <tr>
+                    <th>CM MAC Addr</th>
+                    <th>IP Address</th>
+                    <th>Equip Type</th>
+                    <th>Make</th>
+                    <th>Model</th>
+                    <th>SW Version</th>
+                    <th>Last Name</th>
+                    <th>First Name</th>
+                    <th>Last Mod Date</th>
+                    <th>Created Date</th>
+                </tr>
+          </thead>
+          <tbody> 
+              <tr><td>FF:EE:DD:CC:BB:AA</td><td>60.10.1.2</td><td> Cable Modem</td><td> ARRIS</td><td> TG1642</td><td> tds_1.0.2</td><td> Miles</td><td> Noal</td><td> 2016-06-03 09:56 AM CST</td><td> 2016-06-01 05:00 PM CST</td></tr>
+              <tr><td>FF:EE:DD:CC:BB:AA</td><td>60.10.1.2</td><td> Cable Modem</td><td> ARRIS</td><td> TG1642</td><td> tds_1.0.3</td><td>Dawson</td><td>Nate</td><td> 2016-06-03 09:56 AM CST</td><td> 2016-06-01 05:00 PM CST</td></tr>
+              <tr><td>FF:EE:DD:CC:BB:AA</td><td>60.10.1.2</td><td> Cable Modem</td><td> ARRIS</td><td> TG1642</td><td> tds_1.0.1</td><td>Wallace</td><td>Jon</td><td> 2016-06-03 09:56 AM CST</td><td> 2016-06-01 05:00 PM CST</td></tr>
+          </tbody>
+      </table>
+
+    </div>
+  </div>
+</div>
+
+<div class="sixteen wide column">
+  <div class="ui fluid card">
+    <div class="content">
+      <div class="ui header">Host</div>
+    </div>
+    <div class="content">
+      <table class="ui striped compact table">
+          <thead>
+              <tr>
+                  <th>MAC Addr</th>
+                  <th>CM MAC Addr</th>
+                  <th>IP Address</th>
+                  <th>Equip Type</th>
+                  <th>Make</th>
+                  <th>Model</th>
+                  <th>Last Name</th>
+                  <th>First Name</th>
+                  <th>Last Mod Date</th>
+                  <th>Created Date</th>
+              </tr>
+          </thead>
+          <tbody> 
+              <tr><td>FF:EE:DD:CC:BB:AA</td><td>FF:EE:DD:CC:BB:AA</td><td>60.10.1.2</td><td>Host</td><td>Apple</td><td>Ipad</td><td> Miles</td><td> Noal</td><td> 2016-06-03 09:56 AM CST</td><td> 2016-06-01 05:00 PM CST</td></tr>
+              <tr><td>FF:EE:DD:CC:BB:AA</td><td>FF:EE:DD:CC:BB:AA</td><td>60.10.1.3</td><td>Host</td><td>Apple</td><td>MacBook Pro</td><td>Dawson</td><td>Nate</td><td> 2016-06-03 09:56 AM CST</td><td> 2016-06-01 05:00 PM CST</td></tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <th colspan="10">
+                <div class="ui right floated pagination menu">
+                  <a class="icon item">
+                    <i class="left chevron icon"></i>
+                  </a>
+                  <a class="active item">1</a>
+                  <a class="item">2</a>
+                  <a class="item">3</a>
+                  <a class="icon item">
+                    <i class="right chevron icon"></i>
+                  </a>
+                </div>
+              </th>
+            </tr>
+          </tfoot>
+
+        </table>
+      </div>
+    </div>
+  </div>
+
+
+
+</div> <!-- grid container -->
+</body>
+
+</html>
