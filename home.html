@@ -24,15 +24,15 @@
 <body>
 
 <div class="ui top fixed inverted menu">
-  <a class="item">
+  <a class="item" href="home.html">
     Home
   </a>
   <div class="ui pointing dropdown link item">
     <span class="text">Menu</span>
     <i class="dropdown icon"></i>
     <div class="menu">
-      <a class="item" href="index_sm.html">Subscriber</a>
-      <a class="item" href="equipment_sm.html">Equipment</a>
+      <a class="item" href="subscriber.html">Subscriber</a>
+      <a class="item" href="equipment.html">Equipment</a>
       <div class="item">Network</div>
       <div class="divider"></div>
       <div class="item">
@@ -84,7 +84,7 @@
 <div class="ui head grid">
   <div class="head column">
     <div class="ui container">
-
+      <img src="tds_sm.png" class="ui small right floated image"/>
       <h2 class="ui blue header">
        Current Status 
         <div class="sub header">
@@ -93,14 +93,74 @@
           </div>
         </div>
       </h2>
-
-
     </div>
   </div>
 </div>
 
 <div class="ui grid container">
   <div class="six wide column">
+    <div class="ui fluid card">
+      <div class="content">
+        <div class="ui red header">
+        Alerts (click for details)
+        </div>
+      </div>
+      <div class="content">
+
+        <div class="ui relaxed divided list">
+          <div class="item">
+            <div class="content">
+              <a class="header">CMTS 2 is at 99% usage.</a>
+              <div class="description">Updated 10 mins ago</div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="content">
+              <a class="header">MAC Domain XYZ is at 74% usage.</a>
+              <div class="description">Updated 5 mins ago</div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="content">
+              <a class="header">MAC Domain ZZZ is at 80% usage.</a>
+              <div class="description">Updated 10 mins ago</div>
+            </div>
+          </div>
+        </div>
+     </div>
+    </div> <!-- card -->
+
+    <div class="ui fluid card">
+      <div class="content">
+        <div class="ui header">Top CMTS Usage</div>
+      </div>
+      <div class="content">
+
+        <table class="ui striped compact table">
+          <thead>
+            <tr>
+              <th>CMTS</th>
+              <th>Usage</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>CMTS1</td>
+              <td>80%</td>
+            </tr>
+            <tr>
+              <td>CMTS2</td>
+              <td>75%</td>
+            </tr>
+            <tr>
+              <td>CTMTS3</td>
+              <td>70%</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div> <!-- card -->
+
     <div class="ui fluid card">
       <div class="content">
         <div class="ui header">Top Users</div>
@@ -131,7 +191,7 @@
         </table>
       </div>
     </div> <!-- card -->
-  </div>
+  </div> <!-- column -->
 
  <div class="ten wide column">
     <div class="ui fluid card">
@@ -168,42 +228,7 @@
         </table>
       </div>
     </div> <!-- card -->
-  </div> <!-- column -->
 
-  <div class="six wide column">
-    <div class="ui fluid card">
-      <div class="content">
-        <div class="ui header">Top CMTS Usage</div>
-      </div>
-      <div class="content">
-
-        <table class="ui striped compact table">
-          <thead>
-            <tr>
-              <th>CMTS</th>
-              <th>Usage</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>CMTS1</td>
-              <td>80%</td>
-            </tr>
-            <tr>
-              <td>CMTS2</td>
-              <td>75%</td>
-            </tr>
-            <tr>
-              <td>CTMTS3</td>
-              <td>70%</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </div> <!-- card -->
-  </div>
-
- <div class="ten wide column">
     <div class="ui fluid card">
       <div class="content">
         <div class="ui header">Completed Orders</div>
@@ -240,38 +265,7 @@
     </div> <!-- card -->
   </div> <!-- column -->
 
-  <div class="six wide column">
-    <div class="ui fluid card">
-      <div class="content">
-        <div class="ui red header">
-        Alerts (click for details)
-        </div>
-      </div>
-      <div class="content">
 
-        <div class="ui relaxed divided list">
-          <div class="item">
-            <div class="content">
-              <a class="header">CMTS 2 is at 99% usage.</a>
-              <div class="description">Updated 10 mins ago</div>
-            </div>
-          </div>
-          <div class="item">
-            <div class="content">
-              <a class="header">MAC Domain XYZ is at 74% usage.</a>
-              <div class="description">Updated 5 mins ago</div>
-            </div>
-          </div>
-          <div class="item">
-            <div class="content">
-              <a class="header">MAC Domain ZZZ is at 80% usage.</a>
-              <div class="description">Updated 10 mins ago</div>
-            </div>
-          </div>
-        </div>
-     </div>
-    </div> <!-- card -->
-  </div> <!-- column -->
 
   <div class="sixteen wide right aligned column">
     <div class="ui button">

@@ -1,3 +1,23 @@
 /*******************************
      User Global Variables
 *******************************/
+/* Positive */
+@positiveColor           : @green;
+/* @positiveBackgroundColor : #EEFFE7; */
+@positiveBackgroundColor : #EEFFE7;
+@positiveBorderColor     : #B7CAA7;
+@positiveHeaderColor     : #356E36;
+@positiveTextColor       : #3C763D;
+
+@positiveColorActive   : darken(@positiveColor, 5);
+@negativeColorActive   : darken(@negativeColor, 5);
+
+/* Negative */
+@negativeColor           : @red;
+@negativeBackgroundColor : #FFF0F0;
+@negativeBorderColor     : #DBB1B1;
+@negativeHeaderColor     : #912D2B;
+@negativeTextColor       : #A94442;
+
+@positiveColorDown   : darken(@positiveColor, 7);
+@negativeColorDown   : darken(@negativeColor, 7);
